@@ -1,0 +1,29 @@
+.device {
+	min-height: 700px;
+	position: relative;
+}
+
+.header__img {
+	width: 100%;
+	position: absolute;
+}
+
+.device-container {
+	position: absolute;
+}
+
+.device__title {
+	text-transform: uppercase;
+}
+
+.device__title_name {
+	font-size: 96px;
+}
+
+.device__title_fullname {
+	font-size: 15px;
+}
+
+.detail {
+	text-transform: uppercase;
+}

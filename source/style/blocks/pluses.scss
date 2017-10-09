@@ -1,0 +1,17 @@
+.pluses {
+	background-color: #a18d87;
+}
+
+.pluses__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.pluses__item {
+	flex: 1;
+}
+
+.container {
+	width: 960px;
+}

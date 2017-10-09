@@ -1,0 +1,11 @@
+.footer {
+	position: relative;
+	$height: 75px;
+	min-height: $height;
+	margin-top: -$height;
+}
+
+.footer__authority {
+	@include centered();
+	text-align: center;
+}

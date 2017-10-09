@@ -24,7 +24,7 @@ body {
 	margin: 0;
 	font-family: "robotomedium", Arial, sans-serif;
 	font-size: 16px;
-	color: gray;
+	color: #000;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 }
@@ -33,7 +33,6 @@ body {
 	min-height: 100%;
 	position: relative;
 	overflow: hidden;
-	background-color: yellow;
 }
 
 ul {
@@ -58,4 +57,5 @@ h1, h2, h3, h4, h5 {
 
 a {
 	text-decoration: none;
+	color: #000;
 }

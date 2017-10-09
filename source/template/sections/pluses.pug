@@ -1,0 +1,16 @@
+section.section.pluses
+	.container.pluses-container
+		h3.pluses__title.title
+			| ПРЕИМУЩЕСТВА
+		
+		ul.pluses__list
+			- 
+				var plusesObj = {
+					img:['weight', 'speed','safety', 'ruler', 'temperature', 'combinate'],
+					imgName:['Вес', 'Скорость работы', 'Надежность', 'Точность', 'Минусовые температуры', 'Комбинированное зондирование']
+				}
+
+			- for (var i = 0; i <= plusesObj.img.length; i++)
+				li.pluses__item
+					.plus_img(class=`icon-${plusesObj.img[i]}`)
+					.plus_imgName= plusesObj.imgName[i]
