@@ -1,19 +1,26 @@
 .device {
 	min-height: 700px;
+	background-image: url('../img/bg/bg2.jpg');
+	background-size: auto 100%;
+	background-position: center center;
 	position: relative;
+	color: #fff;
+	text-align: center;
 }
 
-.header__img {
-	width: 100%;
-	position: absolute;
+.nav__list {
+	display: flex;
+	flex-direction: row;
 }
 
-.device-container {
-	position: absolute;
+.nav__item {
+	flex: 1;
 }
 
 .device__title {
 	text-transform: uppercase;
+	margin-top: 120px;
+	margin-bottom: 120px;
 }
 
 .device__title_name {
@@ -26,4 +33,14 @@
 
 .detail {
 	text-transform: uppercase;
+}
+
+.detail__title {
+	border: 1px solid #fff;
+	width: 180px;
+	@include centered(x);
+	position: relative;
+	font-size: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

@@ -35,6 +35,14 @@ body {
 	overflow: hidden;
 }
 
+.container {
+	max-width: 960px;
+	@include centered(x);
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 ul {
 	padding: 0;
 	margin: 0;
