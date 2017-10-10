@@ -1,0 +1,52 @@
+.title {
+	text-align: center;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.text {
+	column-count: 2;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	p {
+		padding-bottom: 20px;
+	}
+
+	@include tablets {
+		column-count: 1;
+	}
+
+	@include phones {
+		column-count: 1;	
+	}
+}
+
+.about__text {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+
+	@include tablets {
+		flex-direction: column;
+	}
+
+	@include phones {
+		flex-direction: column;	
+	}
+}
+
+.column {
+	flex: 1;
+
+	p {
+		padding-bottom: 20px;
+	}
+}
+
+.about-what {
+	text-align: center;
+}
