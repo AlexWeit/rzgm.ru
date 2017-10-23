@@ -6,6 +6,10 @@
 	position: relative;
 	color: #fff;
 	text-align: center;
+
+	a {
+		color: #fff;
+	}
 }
 
 .nav__list {
@@ -39,9 +43,8 @@
 .detail__title {
 	border: 1px solid #fff;
 	width: 180px;
-	@include centered(x);
-	position: relative;
+	//@include centered(x);
+	//position: relative;
 	font-size: 22px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px;
 }
