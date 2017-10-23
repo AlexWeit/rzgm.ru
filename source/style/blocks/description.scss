@@ -1,0 +1,30 @@
+.description__images {
+	display: flex;
+	flex-direction: row;
+
+	@include tablets {
+		flex-direction: column;
+	}
+
+	@include phones {
+		flex-direction: column;	
+	}
+}
+
+.foto {
+	width: 50%;
+
+	@include tablets {
+		width: 100%;
+	}
+
+	@include phones {
+		width: 100%;
+	}
+}
+
+.foto-img {
+	max-height: 400px;
+	@include centered(x);
+	position: relative;
+}

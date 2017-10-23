@@ -1,13 +1,20 @@
-.pluses {
-	background-color: #a18d87;
+.pluses__content {
+	display: flex;
+	flex-direction: column;
 }
 
 .pluses__list {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	margin-top: 50px;
 }
 
 .pluses__item {
 	flex: 1;
+	text-align: center;
+}
+
+.plus_img {
+	@include centered(x);
+	position: relative;
 }

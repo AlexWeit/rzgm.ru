@@ -65,5 +65,31 @@ h1, h2, h3, h4, h5 {
 
 a {
 	text-decoration: none;
-	color: #000;
+}
+
+.bg-brown {
+	background-color: #a18d87;
+	color: #fff;
+}
+
+.title {
+	text-align: center;
+}
+
+.text {
+	column-count: 2;
+	column-gap: 40px;
+	margin-top: 50px;
+
+	p {
+		padding-bottom: 20px;
+	}
+
+	@include tablets {
+		column-count: 1;
+	}
+
+	@include phones {
+		column-count: 1;	
+	}
 }

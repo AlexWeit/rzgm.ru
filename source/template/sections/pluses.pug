@@ -1,16 +1,29 @@
-section.section.pluses
+section.section.pluses.bg-brown
 	.container.pluses-container
-		h3.pluses__title.title
+		h2.pluses__title.title
 			| ПРЕИМУЩЕСТВА
 		
-		ul.pluses__list
-			- 
-				var plusesObj = {
-					img:['weight', 'speed','safety', 'ruler', 'temperature', 'combinate'],
-					imgName:['Вес', 'Скорость работы', 'Надежность', 'Точность', 'Минусовые температуры', 'Комбинированное зондирование']
-				}
+		.pluses__content
+			ul.pluses__list
+				- 
+					var plusesObj = {
+						img:['weight', 'speed','safety'],
+						imgName:['Вес', 'Скорость работы', 'Надежность']
+					}
 
-			- for (var i = 0; i <= plusesObj.img.length; i++)
-				li.pluses__item
-					.plus_img(class=`icon-${plusesObj.img[i]}`)
-					.plus_imgName= plusesObj.imgName[i]
+				- for (var i = 0; i <= plusesObj.img.length-1; i++)
+					li.pluses__item
+						.plus_img(class=`icon-${plusesObj.img[i]}`)
+						.plus_imgName= plusesObj.imgName[i]
+
+			ul.pluses__list
+				- 
+					var plusesObj = {
+						img:['ruler', 'temperature', 'combinate'],
+						imgName:['Точность', 'Минусовые температуры', 'Комбинированное зондирование']
+					}
+
+				- for (var i = 0; i <= plusesObj.img.length-1; i++)
+					li.pluses__item
+						.plus_img(class=`icon-${plusesObj.img[i]}`)
+						.plus_imgName= plusesObj.imgName[i]

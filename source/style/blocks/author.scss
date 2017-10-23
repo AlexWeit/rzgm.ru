@@ -1,0 +1,16 @@
+.author__text {
+	column-count: 1;
+	width: 400px;
+	@include centered (x);
+	position: relative;
+	margin-top: 20px;
+}
+
+.author-name {
+	text-align: center;
+}
+
+.author-about__list {
+	padding-top: 20px;
+	list-style: square;
+}
