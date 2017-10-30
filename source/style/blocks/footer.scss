@@ -1,9 +1,9 @@
 .footer {
 	position: relative;
-	$height: 75px;
-	min-height: $height;
-	margin-top: -$height;
+	min-height: $footer-height;
+	margin-top: -1/2*$footer-height;
 	color: #fff;
+	background-color: #a18d87;
 }
 
 .footer__authority {

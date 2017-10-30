@@ -1,5 +1,5 @@
 .device {
-	min-height: 700px;
+	//min-height: 700px;
 	background-image: url('../img/bg/bg2.jpg');
 	background-size: auto 100%;
 	background-position: center center;
@@ -7,8 +7,14 @@
 	color: #fff;
 	text-align: center;
 
+	height: 100vh; //растянет блок во всю высоту экрана устройства
+
 	a {
 		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -20,6 +26,10 @@
 .nav__item {
 	flex: 1;
 	font-size: 20px;
+
+	@include tablets {
+		font-size: 17px;
+	}
 }
 
 .device__title {
@@ -30,10 +40,18 @@
 
 .device__title_name {
 	font-size: 90px;
+
+	@include tablets {
+		font-size: 70px;
+	}
 }
 
 .device__title_fullname {
 	font-size: 25px;
+
+	@include tablets {
+		font-size: 20px;
+	}
 }
 
 .detail {
@@ -43,8 +61,6 @@
 .detail__title {
 	border: 1px solid #fff;
 	width: 180px;
-	//@include centered(x);
-	//position: relative;
 	font-size: 22px;
 	padding: 20px;
 }

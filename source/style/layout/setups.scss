@@ -1,3 +1,7 @@
+$footer-height: 75px;
+$brown: #a18d87;
+$dark-brown: #624e47;
+
 html {
   height: 100%;
 
@@ -24,9 +28,10 @@ body {
 	margin: 0;
 	font-family: "robotomedium", Arial, sans-serif;
 	font-size: 16px;
-	color: #624e47;
+	color: $dark-brown;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
+	text-align: justify;
 }
 
 .wrapper {
@@ -39,8 +44,11 @@ body {
 	max-width: 960px;
 	@include centered(x);
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 50px 0;
+
+	@include laptop {
+		padding: 50px 10px;
+	}
 }
 
 ul {
@@ -68,7 +76,7 @@ a {
 }
 
 .bg-brown {
-	background-color: #a18d87;
+	background-color: $brown;
 	color: #fff;
 }
 
@@ -87,9 +95,5 @@ a {
 
 	@include tablets {
 		column-count: 1;
-	}
-
-	@include phones {
-		column-count: 1;	
 	}
 }
